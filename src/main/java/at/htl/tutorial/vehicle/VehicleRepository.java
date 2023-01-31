@@ -1,6 +1,6 @@
-package at.htl.vehicle.control;
+package at.htl.tutorial.vehicle;
 
-import at.htl.vehicle.entity.Vehicle;
+import at.htl.tutorial.vehicle.Vehicle;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 
 import javax.enterprise.context.ApplicationScoped;

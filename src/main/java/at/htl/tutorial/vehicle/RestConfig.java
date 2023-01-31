@@ -1,4 +1,4 @@
-package at.htl.vehicle.boundary;
+package at.htl.tutorial.vehicle;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

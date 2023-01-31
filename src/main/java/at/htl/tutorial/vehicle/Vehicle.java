@@ -1,5 +1,6 @@
-package at.htl.vehicle.entity;
+package at.htl.tutorial.vehicle;
 
+import at.htl.tutorial.MyColor;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -43,6 +44,7 @@ public class Vehicle {
         this.firstRegistration = firstRegistration;
         this.model = model;
     }
+
 
     public Long getId() {
         return id;

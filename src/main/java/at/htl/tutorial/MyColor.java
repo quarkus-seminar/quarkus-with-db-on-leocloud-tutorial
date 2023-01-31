@@ -1,4 +1,4 @@
-package at.htl.vehicle.entity;
+package at.htl.tutorial;
 
 public enum MyColor {
     BLUE,
