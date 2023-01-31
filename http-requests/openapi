@@ -1,0 +1,64 @@
+---
+openapi: 3.0.3
+info:
+  title: vehicle API
+  version: 1.0-SNAPSHOT
+paths:
+  /api/hello:
+    get:
+      tags:
+      - Example Resource
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+  /api/vehicle:
+    get:
+      tags:
+      - Vehicle Resource
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Vehicle'
+components:
+  schemas:
+    LocalDate:
+      format: date
+      type: string
+      example: 2022-03-10
+    MyColor:
+      enum:
+      - BLUE
+      - RED
+      - WHITE
+      - GREEN
+      - YELLOW
+      - BLACK
+      type: string
+    Vehicle:
+      type: object
+      properties:
+        id:
+          format: int64
+          type: integer
+        brand:
+          type: string
+        color:
+          $ref: '#/components/schemas/MyColor'
+        first-registration:
+          $ref: '#/components/schemas/LocalDate'
+        model:
+          type: string
+        image-name:
+          type: string
+        image:
+          format: binary
+          type: string

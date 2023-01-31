@@ -1,0 +1,5 @@
+= Project quarkus-with-db-on-leocloud
+
+== Sources
+
+* http://www.mastertheboss.com/soa-cloud/quarkus/how-to-run-quarkus-applications-on-kubernetes/[redhat 2022-01 - How to run Quarkus applications on Kubernetes]
